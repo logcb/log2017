@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Global */
+* { margin: 0; padding: 0; }
+body { min-width:320px;}
+
+/* Type */
+@font-face {
+	font-family: 'Fakt Normal';
+	src: url('../type/Fakt-Normal.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../type/Fakt-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fakt';
+	src: url('../type/Fakt-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+p, a, .search, .search-mobile{font-family:"Fakt"; font-weight:500; font-size:16px; line-height:23px; color:#000; text-decoration:none}
+h2 {font-family:"Fakt Normal"; font-size:42px; font-weight:normal; line-height:54px; color:#000; padding-bottom:60px; text-align:center;}
+a:hover {color:black; text-decoration:none; opacity:0;}
+hr { width:60px; height: 1px; border: 0; border-top: 1px solid black; }
+
+/* Nav */
+nav {padding: 30px 30px 0px 30px; width:100%; position:fixed; z-index:1; min-width:320px;}
+nav a {color:#000; display:inline;}
+.right-align {float:right; clear:none;}
+.left-align {float:left;}
+
+/* Index Search */
+.search, .search-mobile { border:none; display:inline; float:left; margin-left:15%; background-color:transparent; color:black;}
+.search input:hover, .search-mobile input:hover {color:#000;}
+.search:focus, .search-mobile:focus {outline:none;}
+.search-mobile {margin-left:0px; padding-top:13px; display:none;}
+::-webkit-input-placeholder{color: black;}
+::-moz-placeholder{color: black;}
+:-ms-input-placeholder{color: black;}
+:-moz-placeholder {color: black;}
+input:focus::-webkit-input-placeholder {color:transparent; }
+input:focus:-moz-placeholder {color:transparent; }
+input:focus::-moz-placeholder {color:transparent; }
+input:focus:-ms-input-placeholder {color:transparent; }
+
+/* Index Projects */
+.grid {padding:180px 27px 0px 27px; width:100%; max-width:1600px; margin:auto; position:relative;}
+.indexgrid {padding:180px 15px 0px 15px; width:100%; max-width:1600px; margin:auto; position:relative;}
+.list {margin-left:-2px;}
+.grid-item {float:left; margin-bottom:10%;}
+.project-thumb img {width:100%; height:auto;}
+.project-thumb img:hover {opacity:0;}
+.project-title {display:none; text-align:middle; width:100%; left:0; z-index:-1; position: absolute; top: 50%; transform: translateY(-50%); padding-bottom:0px;}
+.project-hover:hover + .project-title {display:block;}
+
+/* Project Nav */
+.project-nav { display:inline; float:left; margin-left:15%; margin-top:-2px;}
+.project-nav ul {list-style-type:none; padding:0; margin:0;}
+.project-nav ul li { display:inline;}
+.project-nav a {color:black;}
+.project-next {padding-left:15px;}
+
+/* Project Page */
+#project-container img {width:100%; height:auto; margin-bottom:10%;}
+#project-container p {font-family:"Fakt Normal"; font-weight:normal;}
+.project-credits {padding-bottom:30px;}
+.project-credits p,a  {color:black;}
+.project-credits a:hover {color:#fff; opacity:1;}
+
+/* Footer */
+footer {text-align:center; padding-top:40px; padding-bottom:60px;}
+footer p,a {display:inline; color:black;}
+footer a {margin-left:30px;}
+
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+	.grid, .indexgrid {width:85%;}
+	.grid-item, #project-container img{margin-bottom:60px;}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+.grid, .indexgrid {width:100%; padding-top:120px;}	
+p, a, .search, .search-mobile {font-size:14px; line-height:19px;}
+h2 {font-size:32px; line-height:44px;}
+.project-nav  {margin-top:-5px; margin-left:30px;}
+.search {display:none;}
+}
