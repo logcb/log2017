@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>LOG Creative Bureau</title>
+	
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/masonry.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/list.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+	$('.indexgrid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		percentPosition: true
+	});
+	</script>
+	
+</head>
+<body>
+	<nav class="navigation">
+		<a class="left-align" href="index.html">LOG Creative Bureau</a>
+	    <input class="search" placeholder="Search" />
+		<a class="right-align" href="info.html">Info</a></p>
+	    <input class="search-mobile" placeholder="Search" />
+	</nav>
+	
+	<div class="indexgrid row" id="project-list">
+		<div class="col-xs-12 col-md-10 offset-md-1">
+		    <div class="grid-sizer col-xs-12 col-sm-6 col-lg-4"></div>
+			<div class="list">
+				
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder2.jpg">
+						</a>
+						<h2 class="project-title">A Hundred Thousand Years Later</h2>
+						<datalist class="project-tags">
+						  	<option value="2016">
+						  	<option value="London">
+						  	<option value="Print">
+						  	<option value="Poster">
+						  	<option value="Risograph">
+						</datalist>				
+					</div>
+				</div>
+	  
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder3.jpg">
+						</a>
+						<h2 class="project-title">Paper Beat Scissors</h2>
+						<datalist class="project-tags">
+						  	<option value="2015"/>
+						  	<option value="Ottawa"/>
+						  	<option value="Digital"/>
+						  	<option value="Screen"/>
+						  	<option value="Website"/>
+						</datalist>				
+					</div>
+				</div>
+	
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder4.jpg">
+						</a>
+						<h2 class="project-title">Ottawa Little Theatre 104th Season</h2>
+						<datalist class="project-tags">
+						  	<option value="2016"/>
+						  	<option value="New York"/>
+						  	<option value="Lobster"/>
+						  	<option value="Gay Babies"/>
+						  	<option value="Yes"/>
+						</datalist>				
+					</div>
+				</div>
+	
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder5.jpg">
+						</a>
+						<h2 class="project-title">Minnow Bathers S/S 17</h2>
+						<datalist class="project-tags">
+						  	<option value="Photograph"/>
+						  	<option value="Video"/>
+						  	<option value="Music"/>
+						  	<option value="Hotel"/>
+						  	<option value="Champagne"/>
+						</datalist>				
+					</div>
+				</div>
+	
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder6.jpg">
+						</a>
+						<h2 class="project-title">SUUNS and Jerusalem in my Heart</h2>
+						<datalist class="project-tags">
+						  	<option value="2016"/>
+						  	<option value="London"/>
+						  	<option value="Print"/>
+						  	<option value="Poster"/>
+						  	<option value="Risograph"/>
+						</datalist>				
+					</div>
+				</div>
+	
+				<div class="grid-item col-xs-12 col-sm-6 col-lg-4">
+					<div class="project-thumb">
+						<a class="project-hover" href="work/2017/project.html">
+							<img src="img/placeholder7.jpg">
+						</a>
+						<h2 class="project-title">Transforming Ottawa</h2>
+						<datalist class="project-tags">
+						  	<option value="2016"/>
+						  	<option value="London"/>
+						  	<option value="Print"/>
+						  	<option value="Poster"/>
+						  	<option value="Risograph"/>
+						</datalist>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>© + &#10084;&#xFE0E;</p> <a href="mailto:info@logcb.com">info@logcb.com</a>
+	</footer>
+    <script type="text/javascript">
+      window.sr = ScrollReveal({
+       	scale: 1,
+       	distance: '0px',
+       	viewFactor: 0.1,
+		easing   : 'ease-in-out',
+       	duration: 1000
+      }).reveal('nav, .grid-item, footer');
+    </script>
+	<script>
+	var options = {
+	    valueNames: [ 'project-title', 'project-tags' ]
+	};
+	var projectList = new List('project-list', options);
+	$(".search, .search-mobile").keyup(function(){
+	    projectList.search($(this).val());
+	});
+	</script>
+</body>
+</html>
