@@ -10,7 +10,17 @@
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
-	<script src="js/main.js"></script>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/masonry.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/list.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	$('.indexgrid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		percentPosition: true
+	});
+	</script>
 </head>
 <body>
 	<nav class="navigation">
