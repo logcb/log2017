@@ -8,3 +8,4 @@ $('.indexgrid').masonry({
 	columnWidth: '.grid-sizer',
 	percentPosition: true
 });
+
