@@ -4,6 +4,13 @@
 * { margin: 0; padding: 0; }
 body { min-width:320px;}
 
+.bg-green {background-color:#224e09;}
+.bg-red {background-color:#bc1d1d;}
+.bg-blue {background-color:#232a9a;}
+.bg-yellow {background-color:#efbc00;}
+.bg-grey {background-color:#a8aab0}
+.bg-black {background-color:#000;}
+
 /* Type */
 @font-face {
 	font-family: 'Fakt Normal';
