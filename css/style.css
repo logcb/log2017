@@ -18,20 +18,13 @@ body { min-width:320px;}
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Fakt';
-	src: url('../type/Fakt-Medium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
-}
-
-p, a, .search, .search-mobile{font-family:"Fakt"; font-weight:500; font-size:17px; line-height:26px; color:#000; text-decoration:none}
-h2 {font-family:"Fakt Normal"; font-size:48px; font-weight:normal; line-height:62px; color:#000; padding-bottom:60px; text-align:center;}
+p, a, .search, .search-mobile{font-family:"Fakt Normal"; font-size:18px; line-height:28px; color:#000; text-decoration:none}
+h2 {font-family:"Fakt Normal"; font-size:54px; font-weight:normal; line-height:62px; color:#000; padding-bottom:60px; text-align:center;}
 a:hover {color:black; text-decoration:none; opacity:0;}
 hr { width:60px; height: 1px; border: 0; border-top: 1px solid black; }
 
 /* Nav */
-nav {padding: 30px 30px 0px 30px; width:100%; position:fixed; z-index:1; min-width:320px;}
+nav {padding: 30px 38px 0px 38px; width:100%; position:fixed; z-index:1; min-width:320px;}
 nav a {color:#000; display:inline;}
 .right-align {float:right; clear:none;}
 .left-align {float:left;}
@@ -51,8 +44,8 @@ input:focus::-moz-placeholder {color:transparent; }
 input:focus:-ms-input-placeholder {color:transparent; }
 
 /* Index Projects */
-.grid {padding:180px 27px 0px 27px; width:100%; max-width:2200px; margin:auto; position:relative;}
-.indexgrid {padding:180px 15px 0px 15px; width:100%; max-width:2200px; margin:auto; position:relative;}
+.grid {padding:180px 27px 0px 27px; width:100%; max-width:2000px; margin:auto; position:relative;}
+.indexgrid {padding:180px 15px 0px 15px; width:100%; max-width:2000px; margin:auto; position:relative;}
 .list {margin-left:-2px;}
 .grid-item {float:left; margin-bottom:8%;}
 .project-thumb img {width:100%; height:auto;}
@@ -68,7 +61,6 @@ input:focus:-ms-input-placeholder {color:transparent; }
 .project-next {padding-left:15px;}
 
 /* Project Page */
-#project-container p {font-family:"Fakt Normal"; font-weight:normal;}
 #project-container img {width:100%; height:auto; margin-bottom:60px; -webkit-filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2)); filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2));}
 #project-container .row {max-width:1400px; margin:auto;}
 .project-credits {padding-bottom:30px;}
