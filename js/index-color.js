@@ -1,17 +1,17 @@
 window.onload = function(){
 
 $('.hover-red').hover(function(){
-    $('body').css('background-color', '#bc1d1d');
+    $('body').css('background-color', '#d32222');
 },function(){
     $('body').css('background-color', '');
 });
 $('.hover-green').hover(function(){
-    $('body').css('background-color', '#224e09');
+    $('body').css('background-color', '#0c7324');
 },function(){
     $('body').css('background-color', '');
 });
 $('.hover-blue').hover(function(){
-    $('body').css('background-color', '#232a9a');
+    $('body').css('background-color', '#1042c0');
 },function(){
     $('body').css('background-color', '');
 });

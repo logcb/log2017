@@ -49,6 +49,7 @@ input:focus:-ms-input-placeholder {color:transparent; }
 .list {margin-left:-2px;}
 .grid-item {float:left; margin-bottom:8%;}
 .project-thumb img {width:100%; height:auto;}
+.project-thumb img, #project-container img { -webkit-filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2)); filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2));}
 .project-thumb img:hover {opacity:0;}
 .project-title {display:none; text-align:center; width:100%; left:0; z-index:-1; position: absolute; top: 50%; transform: translateY(-50%); padding-bottom:0px;}
 .project-hover:hover + .project-title {display:block;}
@@ -61,7 +62,7 @@ input:focus:-ms-input-placeholder {color:transparent; }
 .project-next {padding-left:15px;}
 
 /* Project Page */
-#project-container img {width:100%; height:auto; margin-bottom:60px; -webkit-filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2)); filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.2));}
+#project-container img {width:100%; height:auto; margin-bottom:60px;}
 #project-container .row {max-width:1400px; margin:auto;}
 .project-credits {padding-bottom:30px;}
 .project-credits p,a  {color:black;}
