@@ -21,7 +21,7 @@ $('.hover-yellow').hover(function(){
     $('body').css('background-color', '');
 });
 $('.hover-grey').hover(function(){
-    $('body').css('background-color', '#a8aab0');
+    $('body').css('background-color', '#565656');
 },function(){
     $('body').css('background-color', '');
 });
