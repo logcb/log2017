@@ -5,7 +5,7 @@
 body { min-width:320px; -webkit-font-smoothing: antialiased !important; background-color:Gainsboro;}
 
 .bg-green {background-color:#0c7324;}
-.bg-red {background-color:#d32222;}
+.bg-red {background-color:#ef1d37;}
 .bg-blue {background-color:#1042c0;}
 .bg-yellow {background-color:#efbc00;}
 .bg-grey {background-color:#565656}
@@ -24,6 +24,7 @@ p, a, .search, .search-mobile, .project-credits {
 	color:#000; 
 	text-decoration:none; 
 	font-weight:normal;}
+	p {margin-bottom:14px;}
 h2 {
 	font-family:"Helvetica"; 
 	font-size:54px; 
@@ -36,7 +37,7 @@ h2 {
 nav a, footer p, footer a, .search {font-size:15px; line-height:21px;}
 a:hover {color:black; text-decoration:none; opacity:0;}
 a:focus {color:black; text-decoration:none;}
-hr { width:60px; height: 1px; border: 0; border-top: 1px solid black; }
+hr { width:60px; height: 1px; border: 0; border-top: 1px solid black;}
 
 /* Nav */
 nav {padding: 26px 38px 0px 38px; width:100%; position:fixed; z-index:1; min-width:320px;}
@@ -103,7 +104,7 @@ input:hover:-ms-input-placeholder { color:transparent; }
 
 /* Project Page */
 #project-container img {width:100%; height:auto; margin-bottom:60px;}
-#project-container .row {max-width:1400px; margin:auto;}
+#project-info {max-width:1400px; margin:auto;}
 .project-credits {padding-bottom:30px;}
 .project-credits p,a  {color:black;}
 .portrait {text-align:center;}
