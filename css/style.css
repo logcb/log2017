@@ -9,6 +9,7 @@ body { min-width:320px; -webkit-font-smoothing: antialiased !important; backgrou
 .bg-blue {background-color:#1042c0;}
 .bg-yellow {background-color:#efbc00;}
 .bg-grey {background-color:#565656}
+.bg-white {background-color:#ffffff}
 
 /* Type */
 @font-face {
